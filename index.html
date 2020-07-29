@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--language set to english and direction from left to right-->
+<html lang="eng" dir="ltr">
+
+<head>
+  <!--character set to UTF-8-->
+  <meta charset="UTF-8">
+  <!--Responsive Web page width initiation-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Tab title-->
+  <title>Cats Tester</title>
+  <!--Create a link to style.css file-->
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <!--Jquery CDN link-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<!--(body)contains:
+  -The full background filled with a cat picture.
+  -Navbar which contains a link
+  -The form/Main body
+  -Footer
+-->
+
+<body>
+  <!--Nav bar with an anchor tag as the child element that creates a link to the wikipedia for cats-->
+  <nav> <a href="https://en.wikipedia.org/wiki/Cat">Learn More About Cats</a>
+  </nav>
+  <!--Form content box-->
+  <main class="form-overlay">
+    <!--Store input values in results .html using the GET method-->
+    <form name="myForm3" action="./results.html" method="GET">
+      <h1>Welcome to the Cat tester!!!!</h1>
+      <h3>What type of cat are you?</h3>
+      <hr>
+      <!--Label  -->
+      <label for="haircolor">What color do you want your hair?</label>
+      <!--Input text box -->
+      <input id="haircolor" list="haircolors" type="text" name="haircolor">
+      <!--Preset datalist values to be displayed when input is clicked on -->
+      <datalist id="haircolors">
+        <option value="blue">blue</option>
+        <option value="orange">orange</option>
+        <option value="gray">gray</option>
+        <option value="pink">pink</option>
+      </datalist>
+      <hr> <span>Do you want big eyes?</span>
+      <br>
+      <!--Radio input types with labels -->
+      <input id="Yes" type="radio" name="shape" value="Yes">
+      <label for="Yes">Yes</label>
+      <input id="No" type="radio" name="shape" value="No">
+      <label for="No">No</label>
+      <hr> <span>Please choose from dropdown list</span>
+      <br>
+      <br>
+      <!--Label -->
+      <label for="length">Length of your tail?</label>
+      <!--Drop down list of values -->
+      <select id="length" name="length">
+        <option value="small">small</option>
+        <option value="medium">medium</option>
+        <option value="long">long</option>
+      </select>
+      <hr>
+      <!--Label -->
+      <label for="extrainfo">Is there anything else you would like to add?</label>
+      <br>
+      <!--Text area element with a preset 5 rows and 50 columns-->
+      <textarea id="extrainfo" name="extrainfo" placeholder="Message" rows="5" cols="50"></textarea>
+      <hr>
+      <!--Submit button type -->
+      <input class="submit-button" type="Submit" alt="Submit">
+    </form>
+  </main>
+  <!--footer bar-->
+  <footer></footer>
+  <!--Reference .js file-->
+  <script type="text/javascript" src="test.js"></script>
+</body>
+
+</html>
+
+<!--Html code minified/compressed to optimize webpage speed by reducing file size-->
+<!--<!DOCTYPE html><html lang="eng" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cats Tester</title><link type="text/css" href="style.css" rel="stylesheet"> <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> </head><body> <nav> <a href="https://en.wikipedia.org/wiki/Cat">Learn More About Cats</a> </nav> <main class="form-overlay"><form name="myForm3" action="./results.html" method="GET"><h1>Welcome to the Cat tester!!!!</h1><h3>What type of cat are you?</h3><hr> <label for="haircolor">What color do you want your hair?</label> <input id="haircolor" list="haircolors" type="text" name="haircolor"> <datalist id="haircolors"><option value="blue">blue</option><option value="orange">orange</option><option value="gray">gray</option><option value="pink">pink</option> </datalist><hr> <span>Do you want big eyes?</span> <br> <input id="Yes" type="radio" name="shape" value="Yes"> <label for="Yes">Yes</label> <input id="No" type="radio" name="shape" value="No"> <label for="No">No</label><hr> <span>Please choose from dropdown list</span> <br> <br> <label for="length">Length of your tail?</label> <select id="length" name="length"><option value="small">small</option><option value="medium">medium</option><option value="long">long</option> </select><hr> <label for="extrainfo">Is there anything else you would like to add?</label> <br><textarea id="extrainfo" name="extrainfo" placeholder="Message" rows="5" cols="50"></textarea><hr> <input class="submit-button" type="Submit" alt="Submit"></form> </main> <footer></footer> <script type="text/javascript" src="test.js"></script> </body></html>-->
